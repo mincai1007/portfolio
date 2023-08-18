@@ -97,10 +97,10 @@ R Libraries used:
 Steps:
 
 1. Retreive the data files _Training_BOP.csv_ and _Testing_BOP.csv_ from Kaggle.
-2. Run the R script [1_bop_combine_datasets.R](<Final Code/1_bop_combine_datasets.R>).  Use the two files from Step 1 as the inputs.
+2. Run the R script [1_bop_combine_datasets.R](<1_bop_combine_datasets.R>).  Use the two files from Step 1 as the inputs.
 3. The output of _bop_combine_datasets.R_ will be a combined data set called _BOP.csv_.
-4. Run the R script [2_bop_eda.R](<Final Code/2_bop_eda.R>).  Use the file _BOP.csv_ from Step 3 as the input.
+4. Run the R script [2_bop_eda.R](<2_bop_eda.R>).  Use the file _BOP.csv_ from Step 3 as the input.
 5. Insights gained from exploratory data analysis guide data preparation; these steps are carried out in _bop_data_prep.R_ script.
-6. Run the R script [3_bop_data_prep.R](<Final Code/3_bop_data_prep.R>).  Use the file _BOP.csv_ from Step 3 as the input.
+6. Run the R script [3_bop_data_prep.R](<3_bop_data_prep.R>).  Use the file _BOP.csv_ from Step 3 as the input.
 7. The output of _bop_data_prep.R_ will be a data file called _BOP_Velocity.csv_.
-8. Run the R script [4_bop_modeling.R](<Final Code/4_bop_modeling.R>).  Use the file _BOP_Velocity.csv_ from Step 7 as the input.
+8. Run the R script [4_bop_modeling.R](<4_bop_modeling.R>).  Use the file _BOP_Velocity.csv_ from Step 7 as the input.
