@@ -36,13 +36,6 @@ A data set with this new *velocity* variable was created called *BOP_Velocity.cs
 
 It consists of the exact same data as found in the file *BOP.csv*, with the addition of the *velocity* variable.
 
-### Dropbox Links to Full Data Sets
-
-[Training_BOP.csv](https://www.dropbox.com/s/7u0c6epkyf9mpn0/Training_BOP.csv?dl=0)  
-[Testing_BOP.csv](https://www.dropbox.com/s/dit6n70ai1srzgc/Testing_BOP.csv?dl=0)  
-[BOP.csv](https://www.dropbox.com/s/n0fnz5xwgrtzl5i/BOP.csv?dl=0)  
-[BOP_Velocity.csv](https://www.dropbox.com/scl/fi/iw7rtm15gyiinkyez4p67/BOP_Velocity.csv?rlkey=4lo1zudte61eo93qk7v7x3k0y&dl=0)
-
 ## File Contents
 
 The original training data file consists of 1,687,860 data points.
@@ -86,7 +79,7 @@ The meta data is as follows:
 | went_on_back_order | chr       | indicates if item went on backorder                                                            | response variable |
 | velocity           | chr       | indicates the velocity class of item                                                           | not in original data |
 
-### Instructions to run code
+## Instructions to run code
 
 R version 4.3.0 (2023-04-21 ucrt) -- "Already Tomorrow"
 
@@ -103,11 +96,11 @@ R Libraries used:
 
 Steps:
 
-1. Retreive the data files _Training_BOP.csv_ and _Testing_BOP.csv_. ([Dropbox Links to Full Data Sets](https://github.gatech.edu/MGT-6203-Summer-2023-Canvas/Team-27/tree/main/Data#dropbox-links-to-full-data-sets))
-2. Run the R script [bop_combine_datasets.R](<Final Code/bop_combine_datasets.R>).  Use the two files from Step 1 as the inputs.
+1. Retreive the data files _Training_BOP.csv_ and _Testing_BOP.csv_ from Kaggle.
+2. Run the R script [1_bop_combine_datasets.R](<Final Code/1_bop_combine_datasets.R>).  Use the two files from Step 1 as the inputs.
 3. The output of _bop_combine_datasets.R_ will be a combined data set called _BOP.csv_.
-4. Run the R script [bop_eda.R](<Final Code/bop_eda.R>).  Use the file _BOP.csv_ from Step 3 as the input.
+4. Run the R script [2_bop_eda.R](<Final Code/2_bop_eda.R>).  Use the file _BOP.csv_ from Step 3 as the input.
 5. Insights gained from exploratory data analysis guide data preparation; these steps are carried out in _bop_data_prep.R_ script.
-6. Run the R script [bop_data_prep.R](<Final Code/bop_data_prep.R>).  Use the file _BOP.csv_ from Step 3 as the input.
+6. Run the R script [3_bop_data_prep.R](<Final Code/3_bop_data_prep.R>).  Use the file _BOP.csv_ from Step 3 as the input.
 7. The output of _bop_data_prep.R_ will be a data file called _BOP_Velocity.csv_.
-8. Run the R script [bop_modeling.R](<Final Code/bop_modeling.R>).  Use the file _BOP_Velocity.csv_ from Step 7 as the input.
+8. Run the R script [4_bop_modeling.R](<Final Code/4_bop_modeling.R>).  Use the file _BOP_Velocity.csv_ from Step 7 as the input.
