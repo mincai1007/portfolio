@@ -1,10 +1,9 @@
-## What the project does
+## Project objective
 The objective of our project is to build a model that predicts which items are likely to go on backorder using this (or similar) data.
 
-## Why this is useful
 By leveraging these predictions, the retailer can implement a targeted replenishment strategy for the items that have a high likelihood of going on backorder.
 
-## Data Source
+## Data source
 
 The data was obtained from Kaggle.
 
@@ -12,7 +11,7 @@ It is the *Back Order Prediction Dataset*
 
 Source URL: https://www.kaggle.com/datasets/gowthammiryala/back-order-prediction-dataset
 
-## Data Files
+## Data files
 
 The original data set from Kaggle consists of two files:
 * *Training_BOP.csv* - the training set
@@ -26,7 +25,7 @@ R was used to combine the two data sets.
 
 The code used can be found in the file *bop_combine_datasets.R*.
 
-### Feature Engineering
+### Feature engineering
 
 The project team decided to segment the SKU's into classes based on sales velocity.
 
@@ -36,7 +35,7 @@ A data set with this new *velocity* variable was created called *BOP_Velocity.cs
 
 It consists of the exact same data as found in the file *BOP.csv*, with the addition of the *velocity* variable.
 
-## File Contents
+## File contents
 
 The original training data file consists of 1,687,860 data points.
 
@@ -104,3 +103,7 @@ Steps:
 6. Run the R script [3_bop_data_prep.R](<3_bop_data_prep.R>).  Use the file _BOP.csv_ from Step 3 as the input.
 7. The output of _bop_data_prep.R_ will be a data file called _BOP_Velocity.csv_.
 8. Run the R script [4_bop_modeling.R](<4_bop_modeling.R>).  Use the file _BOP_Velocity.csv_ from Step 7 as the input.
+
+## Video presentation
+
+Link URL: https://www.youtube.com/watch?v=FlMeUIDOmqg
